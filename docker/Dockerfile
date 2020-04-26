@@ -3,8 +3,8 @@ FROM frolvlad/alpine-glibc:alpine-3.8
 # 包含  jdk nginx qrencode ffmpeg nodejs mysql客户端 aapt依赖包
 #
 # 修改源
-RUN echo "http://mirrors.aliyun.com/alpine/latest-stable/main/" > /etc/apk/repositories && \
-    echo "http://mirrors.aliyun.com/alpine/latest-stable/community/" >> /etc/apk/repositories
+RUN echo "http://mirrors.aliyun.com/alpine/v3.8/main/" > /etc/apk/repositories && \
+    echo "http://mirrors.aliyun.com/alpine/v3.8/community/" >> /etc/apk/repositories
 
 # 安装需要的软件 nginx编译相关 qrencode ffmpeg nodejs mysql
 RUN apk update && \
